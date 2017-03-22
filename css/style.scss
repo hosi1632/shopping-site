@@ -1,0 +1,77 @@
+@import "compass";
+@charset "utf-8";
+
+html {
+  font-size: 62.5%;
+}
+
+@mixin fontsize($size: 24, $base: 10) {
+  font-size: $size + px;
+  font-size: ($size / $base) * 1rem;
+}
+
+p {
+  @include fontsize(12);
+}
+
+$ja_font : "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Verdana, "ＭＳ Ｐゴシック", sans-serif;
+$base : #f9f8f6;
+$base_right : #e2ddd4;
+$base_dark : #887f69;
+$gray : #b0b0b0;
+$red : #9d1a2d;
+
+
+// body...........................
+body {
+background : $base;
+}
+
+
+// header...........................
+header{
+  .hedder_navi_li{
+    list-style: none;
+    float: right;
+  }
+  li{
+    display: inline-block;
+    line_style-type: none;
+    text-decoration: none;
+	  margin: 0 0 0 0;
+	  padding: 0 10px 0 10px;
+  }
+}
+
+
+// main...........................
+
+h2 {
+    width: 100%;
+    @include box-sizing(border-box);
+}
+.new {
+  background-color: white;
+}
+.popular {
+  background-color: white;
+}
+.box {
+  width: 31%;
+  margin: 5px;
+  padding: 5px;
+  display: inline-block;
+  text-align: center;
+  background-color: $base_dark;
+  @include border-radius(2px);
+  @include box-sizing(border-box);
+}
+
+// sid...........................
+
+#menu {
+  cursor: pointer;
+}
+.sp_menu_toggle {
+  display: none;
+}

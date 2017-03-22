@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>shopping-site</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/sample.css">
+
+  <!-- javascript
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script type="text/javascript" src="scripts/jquery.js"></script>
+  <script type="text/javascript" src="scripts/jquery.cycle.all.min.js"></script>
+  <script type="text/javascript" src="scripts/jquery.fancybox.js"></script>
+  <script type="text/javascript" src="scripts/jquery.innerfade.js"></script>
+  <script type="text/javascript" src="scripts/jquery.randomdisplay.js"></script>
+  <script type="text/javascript" src="scripts/common.js"></script>
+  
+  <script>
+  $(function(){
+    $(document).ready(function(){
+
+      $("#sp_navi_btn").click(function () {
+        $(this).next().slideToggle();
+      });
+
+    });
+  });
+
+</script>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+ 
+</head>
+
+<body>
+  
+ 
+  
+  <header>
+  <div id="header_in" class="container">
+    <div class="row">
+      <div class="six columns logo">
+
+        <h1><a href="index.html"><img class="u-max-full-width" src="images/top/logo.png" alt="株式会社サンプル" srcset="images/top/logo@2x.png 2x" /></a></h1>
+
+      </div>
+      <div class="six columns navi">
+        
+        <div id="menu">ここをクリック</div>
+
+          <ul class="sp_menu_toggle">
+            <li><a href="">ログイン</a></li>
+            <li><a href="">カート</a></li>
+            <li><a href="">マイページ</a></li>
+            <li><a href="">ショッピングガイド</a></li>
+          </ul>
+<!-- sp_navi -->
+        <div class="sp_navi">
+          <img id="sp_navi_btn" class="u-max-full-width" src="images/top/sp_navi.png" alt="sp_navi" srcset="images/top/sp_navi@2x.png 2x" />
+
+          <ul class="sp_navi_li">
+            <li><a href="index.html">TOPページ</a></li>
+            <li><a href="news.html">ニュースリリース</a></li>
+            <li><a href="company.html">会社概要</a></li>
+          </ul>
+        </div>
+        
+        <div class="pc_navi">
+
+          <ul class="pc_navi_li">
+            <li class="navi_toppage"><a href="index.html">TOPページ</a></li>
+            <li class="navi_news"><a href="news.html">ニュースリリース</a></li>
+            <li class="navi_company"><a href="company.html">会社概要</a></li>
+          </ul>
+        
+        </div>
+
+      </div>
+    </div>
+    <!-- row -->
+  </div>
+  <!-- header_in -->
+</header>
+<!-- sub_cover -->
+
+<!-- contents -->
+<div id="contents">
+  <div class="container">
+    <div class="row">
+
+      <div id="main" class="nine columns">
+        メインコンテンツ
+      </div>
+
+      <div id="sidebar" class="three columns">
+        サイドコンテンツ
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- //footer -->
+<footer>
+  <div class="container">
+   
+
+    <div class="row">
+      <div class="twelve columns sp">
+        <p class="copy">copyright (C) SampleCompany all rights reserved.</p>
+      </div>
+      <!-- columns -->
+    </div>
+    <!-- row -->
+  </div>
+</footer>
+
+
+</body>
+
+</html>
