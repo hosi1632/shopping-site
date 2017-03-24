@@ -30,17 +30,23 @@ background : $base;
 
 // header...........................
 header{
+  
+  padding: 10px 0 10px 0;
+  
   .hedder_navi_li{
     list-style: none;
     float: right;
+    
   }
+  
   li{
-    display: inline-block;
+    display: inline;
     line_style-type: none;
     text-decoration: none;
-	  margin: 0 0 0 0;
-	  padding: 0 10px 0 10px;
+	  margin: 0;
+	  padding: 0 0 0 10px;
   }
+  
 }
 
 
@@ -48,6 +54,7 @@ header{
 
 h2 {
     width: 100%;
+    padding: 10px;
     @include box-sizing(border-box);
 }
 .new {
@@ -62,16 +69,62 @@ h2 {
   padding: 5px;
   display: inline-block;
   text-align: center;
-  background-color: $base_dark;
   @include border-radius(2px);
   @include box-sizing(border-box);
 }
 
+
+.guide_box{
+  width: 45%;
+  padding: 2px;
+  display: inline-block;
+  text-align: center;
+  background: white;
+  @include border-radius(2px);
+  @include box-sizing(border-box);
+}
+
+
 // sid...........................
 
-#menu {
-  cursor: pointer;
+#sidebar{
+  .item_serch{
+    width: 100%;
+    background: white;
+  }
+  
+  .sp_navi{
+    margin-top: 10px;
+    width: 100%;
+    background: white;
+  }
+  
+  li{
+    width: 100%;
+    padding: 5px;
+    background: white;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .sidlink{
+    background: $base_dark;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 5px 0;
+  }
 }
-.sp_menu_toggle {
-  display: none;
+
+// footer...............
+
+footer{
+  border-top: $base_dark;
+  
+  .copy{
+    text-align: center;
+    display: block;
+    padding: 30px 0 80px 0;
+    
+  }
+  
 }
