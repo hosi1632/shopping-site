@@ -38,12 +38,8 @@ header{
     float: left;
   }
   
-  .six.columns{
-    float: right;
-    float: bottom;
-    margin-right: 0;
-    margin-bottom: 0;
-    display: block;
+  .six.columns.menu{
+ margin-top: 15px;
   }
   
   .hedder_navi_li{
@@ -65,6 +61,25 @@ header{
 
 #contents{
   margin-top: 30px;
+  #main{
+          /* Owl Carouwsel Dots*/
+      .owl-theme .owl-dots, .owl-theme .owl-nav {
+        text-align: left;
+      }
+      .owl-theme .owl-dots .owl-dot span {
+          width: 30px;
+          height: 5px;
+          margin: 5px 7px;
+          background: #D6D6D6;
+          display: block;
+          -webkit-backface-visibility: visible;
+          transition: opacity .3s ease;
+          border-radius: 0;
+      }
+      .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+          background: $red;
+      }
+  }
 }
 
 // main...........................
@@ -79,29 +94,36 @@ h2 {
       margin: 0;
     }
 }
-.new {
-  background-color: white;
-}
+.new,
 .popular {
-  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  
+  
 }
 .box {
-  width: 31%;
-  margin: 5px;
+  width: 32%;
+  margin: 3px;
   padding: 5px;
-  display: inline-block;
+  background-color: white;
   @include border-radius(2px);
   @include box-sizing(border-box);
+  
+  p{
+     text-align: left;
+  }
+  
 }
 
 .shopping{
-  
+  display: flex;
   line-height: 200%;
   
   .guide_box2{
     width: 49%;
     height: 200px;
-    display: inline-block;
+
     background: white;
     @include box-sizing(border-box);
   }
@@ -109,7 +131,7 @@ h2 {
     margin-right: 0.5%;
      width: 49%;
     height: 200px;
-    display: inline-block;
+
     background: white;
     @include box-sizing(border-box);
   }
@@ -131,22 +153,30 @@ h2 {
     background: white;
   }
   
-  .sp_navi{
-    margin-top: 10px;
-    width: 100%;
-    
-    .next{
-      float: right;
-    }
-    
-    span{
-      text-align: center;
-      .button-more{
-        text-align: center;
-        margin: 5px;
+.pc_navi{
+  margin-top: 10px;
+  width: 100%;
+  
+  
+  .pc_navi_li{
+    text-align: left center;
+    li{
+      background: #fff url(../images/top/next_icon_gray.png) no-repeat right center;
+        
       }
     }
+    
+      .sidlink{
+    background: $base_dark url(../images/top/next_icon.png) no-repeat right center;
+    width: 100%;
+    height: 24px;
+    margin: 5px 0 5px 0;
+    img{
+      margin: 6px;
+      float: left;
+    }
   }
+}
   
   li{
     width: 100%;
@@ -174,9 +204,21 @@ h2 {
   #about, #shop{
     background: white;
     width: 100%;
-  }
+    text-align: center;
+    margin-top: 10px;
+    
+    p{
+      text-align: left;
+    }
   
-  .sidlink{
+  
+    .button-more{
+      display: inline-block;
+      margin: 20px;
+      
+    }
+    
+     .sid{
     background: $base_dark;
     width: 100%;
     height: 24px;
@@ -184,9 +226,9 @@ h2 {
     img{
       margin: 6px;
       float: left;
+      }
     }
   }
-  
   
 }
 
@@ -222,3 +264,4 @@ footer{
   }
   
 }
+

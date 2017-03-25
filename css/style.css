@@ -13,12 +13,8 @@ header {
   padding: 30px 0 10px 0; }
   header .six.columns.logo {
     float: left; }
-  header .six.columns {
-    float: right;
-    float: bottom;
-    margin-right: 0;
-    margin-bottom: 0;
-    display: block; }
+  header .six.columns.menu {
+    margin-top: 15px; }
   header .hedder_navi_li {
     float: right;
     margin-right: 0;
@@ -29,6 +25,21 @@ header {
 
 #contents {
   margin-top: 30px; }
+  #contents #main {
+    /* Owl Carouwsel Dots*/ }
+    #contents #main .owl-theme .owl-dots, #contents #main .owl-theme .owl-nav {
+      text-align: left; }
+    #contents #main .owl-theme .owl-dots .owl-dot span {
+      width: 30px;
+      height: 5px;
+      margin: 5px 7px;
+      background: #D6D6D6;
+      display: block;
+      -webkit-backface-visibility: visible;
+      transition: opacity .3s ease;
+      border-radius: 0; }
+    #contents #main .owl-theme .owl-dots .owl-dot.active span, #contents #main .owl-theme .owl-dots .owl-dot:hover span {
+      background: #9d1a2d; }
 
 h2 {
   width: 100%;
@@ -41,30 +52,32 @@ h2 {
     padding: 0;
     margin: 0; }
 
-.new {
-  background-color: white; }
-
+.new,
 .popular {
-  background-color: white; }
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center; }
 
 .box {
-  width: 31%;
-  margin: 5px;
+  width: 32%;
+  margin: 3px;
   padding: 5px;
-  display: inline-block;
+  background-color: white;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
   border-radius: 2px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
+  .box p {
+    text-align: left; }
 
 .shopping {
+  display: flex;
   line-height: 200%; }
   .shopping .guide_box2 {
     width: 49%;
     height: 200px;
-    display: inline-block;
     background: white;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -73,7 +86,6 @@ h2 {
     margin-right: 0.5%;
     width: 49%;
     height: 200px;
-    display: inline-block;
     background: white;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -90,16 +102,21 @@ h2 {
 #sidebar .item_serch {
   width: 100%;
   background: white; }
-#sidebar .sp_navi {
+#sidebar .pc_navi {
   margin-top: 10px;
   width: 100%; }
-  #sidebar .sp_navi .next {
-    float: right; }
-  #sidebar .sp_navi span {
-    text-align: center; }
-    #sidebar .sp_navi span .button-more {
-      text-align: center;
-      margin: 5px; }
+  #sidebar .pc_navi .pc_navi_li {
+    text-align: left center; }
+    #sidebar .pc_navi .pc_navi_li li {
+      background: #fff url(../images/top/next_icon_gray.png) no-repeat right center; }
+  #sidebar .pc_navi .sidlink {
+    background: #887f69 url(../images/top/next_icon.png) no-repeat right center;
+    width: 100%;
+    height: 24px;
+    margin: 5px 0 5px 0; }
+    #sidebar .pc_navi .sidlink img {
+      margin: 6px;
+      float: left; }
 #sidebar li {
   width: 100%;
   height: 24px;
@@ -117,15 +134,22 @@ h2 {
     text-decoration: none; }
 #sidebar #about, #sidebar #shop {
   background: white;
-  width: 100%; }
-#sidebar .sidlink {
-  background: #887f69;
   width: 100%;
-  height: 24px;
-  margin: 5px 0 5px 0; }
-  #sidebar .sidlink img {
-    margin: 6px;
-    float: left; }
+  text-align: center;
+  margin-top: 10px; }
+  #sidebar #about p, #sidebar #shop p {
+    text-align: left; }
+  #sidebar #about .button-more, #sidebar #shop .button-more {
+    display: inline-block;
+    margin: 20px; }
+  #sidebar #about .sid, #sidebar #shop .sid {
+    background: #887f69;
+    width: 100%;
+    height: 24px;
+    margin: 5px 0 5px 0; }
+    #sidebar #about .sid img, #sidebar #shop .sid img {
+      margin: 6px;
+      float: left; }
 
 #pagetop-re .container {
   float: right;
