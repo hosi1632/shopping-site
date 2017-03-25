@@ -12,6 +12,7 @@ html {
 
 p {
   @include fontsize(12);
+  line-height: 140%;
 }
 
 $ja_font : "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Verdana, "ＭＳ Ｐゴシック", sans-serif;
@@ -31,24 +32,40 @@ background : $base;
 // header...........................
 header{
   
-  padding: 10px 0 10px 0;
+  padding: 30px 0 10px 0;
+  
+  .six.columns.logo{
+    float: left;
+  }
+  
+  .six.columns{
+    float: right;
+    float: bottom;
+    margin-right: 0;
+    margin-bottom: 0;
+    display: block;
+  }
   
   .hedder_navi_li{
-    list-style: none;
     float: right;
+    margin-right: 0;
+    margin-bottom: 0;
+    
     
   }
   
   li{
     display: inline;
-    line_style-type: none;
-    text-decoration: none;
-	  margin: 0;
-	  padding: 0 0 0 10px;
+	  margin-left: 10px;
   }
   
 }
 
+// contents...........................
+
+#contents{
+  margin-top: 30px;
+}
 
 // main...........................
 
@@ -56,6 +73,11 @@ h2 {
     width: 100%;
     padding: 10px;
     @include box-sizing(border-box);
+    img{
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
 }
 .new {
   background-color: white;
@@ -68,22 +90,38 @@ h2 {
   margin: 5px;
   padding: 5px;
   display: inline-block;
-  text-align: center;
   @include border-radius(2px);
   @include box-sizing(border-box);
 }
 
-
-.guide_box{
-  width: 45%;
-  padding: 2px;
-  display: inline-block;
-  text-align: center;
-  background: white;
-  @include border-radius(2px);
-  @include box-sizing(border-box);
+.shopping{
+  
+  line-height: 200%;
+  
+  .guide_box2{
+    width: 49%;
+    height: 200px;
+    display: inline-block;
+    background: white;
+    @include box-sizing(border-box);
+  }
+  .guide_box1{
+    margin-right: 0.5%;
+     width: 49%;
+    height: 200px;
+    display: inline-block;
+    background: white;
+    @include box-sizing(border-box);
+  }
+  h3{
+    color: $base_dark;
+    @include fontsize(16);
+  }
+  h4{
+    color: $base_dark;
+    @include fontsize(12);
+  }
 }
-
 
 // sid...........................
 
@@ -96,29 +134,85 @@ h2 {
   .sp_navi{
     margin-top: 10px;
     width: 100%;
-    background: white;
+    
+    .next{
+      float: right;
+    }
+    
+    span{
+      text-align: center;
+      .button-more{
+        text-align: center;
+        margin: 5px;
+      }
+    }
   }
   
   li{
     width: 100%;
-    padding: 5px;
+    height: 24px;
+    margin-bottom: 0.5px;
     background: white;
-    text-decoration: none;
+    color: black;
     display: inline-block;
+    
+    a:link{
+      text-decoration: none;
+    }
+    a:visited{
+      text-decoration: none;
+    }
+    a:hover{
+      text-decoration: none;
+    }
+    a:active{
+      text-decoration: none;
+    }
+    
+  }
+  
+  #about, #shop{
+    background: white;
+    width: 100%;
   }
   
   .sidlink{
     background: $base_dark;
     width: 100%;
-    padding: 10px;
+    height: 24px;
     margin: 5px 0 5px 0;
+    img{
+      margin: 6px;
+      float: left;
+    }
+  }
+  
+  
+}
+
+#pagetop-re{
+  .container{
+  float: right;
+  width: 15%;
+  height: 10px;
+  display: inline;
+  margin: 20px 0 10px 0;
+  }
+  
+  img{
+    float: right;
   }
 }
 
 // footer...............
 
 footer{
-  border-top: $base_dark;
+  .container{
+  border-top: 20px;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: $base_dark;
+  }
   
   .copy{
     text-align: center;
