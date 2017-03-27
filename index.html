@@ -37,25 +37,17 @@
         
   <!-- sid navi JS -->
   <script>
-  $(function(){
-    $(document).ready(function(){
-
-      $("#sp_page_btn").click(function () {
-        $(this).next().slideToggle();
-      });
-
-    });
+ $(document).ready(function(){
+  $("#pc_page_btn").click(function(){
+    $(".pc_navi_li").slideToggle();
   });
+});
   
-   $(function(){
-    $(document).ready(function(){
-
-      $("#sp_categories_btn").click(function () {
-        $(this).next().slideToggle();
-      });
-
-    });
+ $(document).ready(function(){
+  $("#pc_categories_btn").click(function(){
+    $(".pc_navi_li_2").slideToggle();
   });
+});
   </script>
 
   <!-- Favicon
@@ -224,7 +216,7 @@
                 </div>
               </div>
               
-              <ul class="pc_navi_li">
+              <ul class="pc_navi_li_2">
                 <li><a href="">カテゴリー</a></li>
                 <li><a href="">カテゴリー</a></li>
                 <li><a href="">カテゴリー</a></li>

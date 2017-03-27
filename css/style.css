@@ -59,8 +59,8 @@ h2 {
   text-align: center; }
 
 .box {
-  width: 32%;
-  margin: 3px;
+  width: 33%;
+  margin: 1px;
   padding: 5px;
   background-color: white;
   -moz-border-radius: 2px;
@@ -103,12 +103,11 @@ h2 {
   width: 100%;
   background: white; }
 #sidebar .pc_navi {
-  margin-top: 10px;
-  width: 100%; }
-  #sidebar .pc_navi .pc_navi_li {
-    text-align: left center; }
-    #sidebar .pc_navi .pc_navi_li li {
-      background: #fff url(../images/top/next_icon_gray.png) no-repeat right center; }
+  margin-top: 10px; }
+  #sidebar .pc_navi #pc_page_btn, #sidebar .pc_navi #pc_categories_btn {
+    cursor: pointer; }
+  #sidebar .pc_navi .sp_navi_li, #sidebar .pc_navi .sp_navi_li_2 {
+    display: none; }
   #sidebar .pc_navi .sidlink {
     background: #887f69 url(../images/top/next_icon.png) no-repeat right center;
     width: 100%;
@@ -117,21 +116,29 @@ h2 {
     #sidebar .pc_navi .sidlink img {
       margin: 6px;
       float: left; }
-#sidebar li {
-  width: 100%;
-  height: 24px;
-  margin-bottom: 0.5px;
-  background: white;
-  color: black;
-  display: inline-block; }
-  #sidebar li a:link {
-    text-decoration: none; }
-  #sidebar li a:visited {
-    text-decoration: none; }
-  #sidebar li a:hover {
-    text-decoration: none; }
-  #sidebar li a:active {
-    text-decoration: none; }
+  #sidebar .pc_navi .pc_navi_li li,
+  #sidebar .pc_navi .pc_navi_li_2 li {
+    background: #fff url(../images/top/next_icon_gray.png) no-repeat right center;
+    height: 24px;
+    margin-bottom: 0.5px;
+    display: inline-block;
+    width: 100%; }
+    #sidebar .pc_navi .pc_navi_li li a:link,
+    #sidebar .pc_navi .pc_navi_li_2 li a:link {
+      color: black;
+      text-decoration: none; }
+    #sidebar .pc_navi .pc_navi_li li a:visited,
+    #sidebar .pc_navi .pc_navi_li_2 li a:visited {
+      color: black;
+      text-decoration: none; }
+    #sidebar .pc_navi .pc_navi_li li a:hover,
+    #sidebar .pc_navi .pc_navi_li_2 li a:hover {
+      color: black;
+      text-decoration: none; }
+    #sidebar .pc_navi .pc_navi_li li a:active,
+    #sidebar .pc_navi .pc_navi_li_2 li a:active {
+      color: black;
+      text-decoration: none; }
 #sidebar #about, #sidebar #shop {
   background: white;
   width: 100%;
