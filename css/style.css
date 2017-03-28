@@ -22,6 +22,14 @@ header {
   header li {
     display: inline;
     margin-left: 10px; }
+  @media (max-width: 425px) {
+    header #header_in {
+      padding: 20px; }
+    header .six.columns.logo {
+      width: 100%;
+      float: center; }
+    header .six.columns.menu .hedder_navi_li .a {
+      display: none; } }
 
 #contents {
   margin-top: 30px; }
@@ -41,24 +49,22 @@ header {
     #contents #main .owl-theme .owl-dots .owl-dot.active span, #contents #main .owl-theme .owl-dots .owl-dot:hover span {
       background: #9d1a2d; }
 
-h2 {
+#main h2 {
   width: 100%;
   padding: 10px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
-  h2 img {
+  #main h2 img {
     width: 100%;
     padding: 0;
     margin: 0; }
-
-.new,
-.popular {
+#main .new,
+#main .popular {
   display: flex;
   flex-wrap: wrap;
   text-align: center; }
-
-.box {
+#main .box {
   width: 33%;
   margin: 1px;
   padding: 5px;
@@ -69,20 +75,19 @@ h2 {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
-  .box p {
+  #main .box p {
     text-align: left; }
-
-.shopping {
+#main .shopping {
   display: flex;
   line-height: 200%; }
-  .shopping .guide_box2 {
+  #main .shopping .guide_box2 {
     width: 49%;
     height: 200px;
     background: white;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box; }
-  .shopping .guide_box1 {
+  #main .shopping .guide_box1 {
     margin-right: 0.5%;
     width: 49%;
     height: 200px;
@@ -90,14 +95,38 @@ h2 {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box; }
-  .shopping h3 {
+  #main .shopping h3 {
     color: #887f69;
     font-size: 16px;
     font-size: 1.6rem; }
-  .shopping h4 {
+  #main .shopping h4 {
     color: #887f69;
     font-size: 12px;
     font-size: 1.2rem; }
+@media (max-width: 425px) {
+  #main .new,
+  #main .popular {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 100%; }
+    #main .new .box,
+    #main .popular .box {
+      width: 48%;
+      background-color: white;
+      -moz-border-radius: 2px;
+      -webkit-border-radius: 2px;
+      border-radius: 2px;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box; }
+      #main .new .box p,
+      #main .popular .box p {
+        text-align: left; }
+  #main .shopping .guide_box2 {
+    width: 100%; }
+  #main .shopping .guide_box1 {
+    width: 100%; } }
 
 #sidebar .item_serch {
   width: 100%;

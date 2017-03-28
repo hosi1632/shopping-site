@@ -34,6 +34,7 @@ header{
   
   padding: 30px 0 10px 0;
   
+  
   .six.columns.logo{
     float: left;
   }
@@ -54,6 +55,24 @@ header{
     display: inline;
 	  margin-left: 10px;
   }
+  
+@media (max-width: 425px) {
+  
+    #header_in{
+      padding: 20px;
+    }
+    .six.columns.logo{
+      width: 100%;
+      float: center;
+    }
+    .six.columns.menu{
+      .hedder_navi_li{
+        .a{
+      display: none;
+      }
+    }
+  }
+}  
   
 }
 
@@ -83,6 +102,7 @@ header{
 }
 
 // main...........................
+#main{
 
 h2 {
     width: 100%;
@@ -129,7 +149,7 @@ h2 {
   }
   .guide_box1{
     margin-right: 0.5%;
-     width: 49%;
+    width: 49%;
     height: 200px;
 
     background: white;
@@ -143,6 +163,41 @@ h2 {
     color: $base_dark;
     @include fontsize(12);
   }
+}
+
+@media (max-width: 425px) {
+  .new,
+  .popular {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 100%;
+    
+  .box {
+    width: 48%;
+    background-color: white;
+    @include border-radius(2px);
+    @include box-sizing(border-box);
+   
+    p{
+       text-align: left;
+    }
+  }
+    
+  }
+  
+  .shopping{
+    
+    .guide_box2{
+      width: 100%;
+    }
+    .guide_box1{
+      width: 100%;
+    }
+  }
+
+}
+
 }
 
 // sid...........................
@@ -273,4 +328,3 @@ footer{
   }
   
 }
-
